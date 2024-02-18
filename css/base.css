@@ -10,7 +10,7 @@ a{
     display:inline-block;
     margin:0;
     text-decoration:none;
-    color:white;
+    
 }
 .navbar-logo{
     position:inline-block;
@@ -31,7 +31,7 @@ a{
 }
 
 .navbar-user-name p{
-    color:#fff;
+    color:#d0f8d3;
     font-family:"Kode Mono", monospace;
     font-size:1rem;
     position:relative;
@@ -50,8 +50,9 @@ a{
     font-weight:600;
     font-size:1.2rem;
     font-family:"Kode Mono", monospace;
+    transition:all 0.05s;
 }
-.nav-link-active{
+.nav-link-active, .nav-item:hover .nav-link{
     color: #265817 !important;
 }
 
@@ -87,4 +88,46 @@ a{
          top:-0.4rem;
     }
 
+}
+
+/*bottom navbar*/
+@media(min-width:577px){
+    #small-navbar{
+    position: absolute!important;
+    opacity: 0!important;
+}
+}
+
+@media(max-width:576px){
+
+    .bottom-navbar{
+        width:80%;
+        margin-left:10%;
+        margin-right:10%;
+        margin-top:2rem;
+        margin-bottom:2rem;
+        background: rgba(255,255,255,.05);
+        box-shadow: 0 0 10px rgba(0,0,0,0.25);
+        backdrop-filter: blur(20px);
+        border-radius:20px;
+        padding-left:0.7rem;
+        padding-right:0.7rem;
+
+    }
+    .bottom-nav-item{
+        color:#52B036;
+        text-decoration: none;
+        padding-top:0.4rem;
+        display:flex;
+        justify-content: center;
+        text-align:center;
+    }
+    .bottom-nav-item p, .bottom-nav-item i, .bottom-nav-item code{
+        display:inline;
+        padding:0;
+        color:#52B036;
+        text-decoration: none;
+
+    }
+    
 }

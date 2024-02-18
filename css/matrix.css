@@ -1,12 +1,14 @@
 /*matritsa kabi 0 va 1ga aylantiruvchi animatsiya*/
 
-
+.er34{
+  z-index:2;
+}
 .matrix-animate span, .matrix-animate1 span{
    color:#52b032;
    font-family:"Kode Mono", monospace;
    margin:0;
    padding:0;
-   opacity:0.75;
+   opacity:0.5;
    animation:changeNumber 0.3s ;
    animation-direction: alternate;
    animation-iteration-count: 1000;
