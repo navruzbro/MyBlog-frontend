@@ -1,0 +1,22 @@
+/*SHared styles*/
+
+.p-absolute{
+    position:absolute!important;
+}
+.opacity-0{
+    opacity:0!important;
+}
+.opacity-5{
+    opacity:0.5!important;
+}
+.opacity-10, .opacity-1{
+    opacity:1!important;
+}
+
+.txt-green{
+    color:#52B038!important;
+}
+
+.f-kode{
+    font-family:"Kode Mono", monospace;
+}

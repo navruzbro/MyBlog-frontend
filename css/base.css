@@ -1,0 +1,90 @@
+/*Navbar section*/
+a{
+    cursor:pointer;
+}
+
+.navbar-section{
+  display:block;
+}
+.navbar-user, .navbar-logo, .navbar-user-name, .navbar-user-name p, .navbar-user-name span{
+    display:inline-block;
+    margin:0;
+    text-decoration:none;
+    color:white;
+}
+.navbar-logo{
+    position:inline-block;
+    border-radius:49%;
+    overflow:hidden;
+    background:#52B036;
+    border:2px #52B036 solid;
+    
+}
+.navbar-logo:hover img{
+    transform:scale(1.3);
+    opacity:0.8;
+}
+.navbar-logo, .navbar-logo img{
+    width:2.8rem;
+    height:2.8rem;
+    transition:all 0.5s;
+}
+
+.navbar-user-name p{
+    color:#fff;
+    font-family:"Kode Mono", monospace;
+    font-size:1rem;
+    position:relative;
+    top:0.6rem;
+}
+.navbar-user-name span{
+    font-family:"Kode Mono", monospace;
+    font-size:0.6rem;
+    color:#52B036;
+    font-weight:200;
+    position:relative;
+    bottom:0.2rem;
+}
+.nav-item .nav-link{
+    color:#52B036;
+    font-weight:600;
+    font-size:1.2rem;
+    font-family:"Kode Mono", monospace;
+}
+.nav-link-active{
+    color: #265817 !important;
+}
+
+.navbar-toggler{
+    color:#52B036;
+    border:2.6px solid #52B036;
+}
+/*END*/
+@media(min-width:576px){
+    .navbar-logo, .navbar-logo img{
+        width:3rem;
+        height:3rem;
+    }
+    .navbar-user-name p{
+        font-size:1.2rem;
+        top:0;
+    }
+    .navbar-user-name span{
+         font-size:0.8rem;
+         top:-0.4rem;
+    }
+
+}
+@media(min-width:992px){
+    .navbar-logo, .navbar-logo img{
+        width:3.4rem;
+        height:3.4rem;
+    }
+    .navbar-user-name p{
+        top:-0.2rem;
+    }
+    .navbar-user-name span{
+         top:-0.4rem;
+    }
+
+}
