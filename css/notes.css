@@ -1,0 +1,17 @@
+.notes-navbar .nav-item .nav-link{
+    color:#1d2323!important;
+}
+
+.note-item{
+    position:relative;
+}
+
+.note-item div p img{
+    width:100%;
+    border-radius:2px 15px 2px 2px;
+}
+
+.note-item div p video{
+    width:100%;
+    border-radius:2px 15px 2px 2px;
+}

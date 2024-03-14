@@ -1,3 +1,9 @@
+body, #body{
+
+    font-family:"Kode Mono", monospace!important;
+}
+
+
 /*Navbar section*/
 a{
     cursor:pointer;

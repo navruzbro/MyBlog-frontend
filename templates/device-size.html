@@ -1,17 +1,10 @@
 <!DOCTYPE html>
-
-<!--About this web site:
-    --Bu saytni o'z fantaziyamni ishga solgan holda yaratyapman--
-    --Hacker rasmini internetdan yuklab oldim--
-    --Matritsa uslubidagi animatsiyani ham o'zim yaratdim (hech qanday manbadan olinmagan!)--
--->
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--title va title icon-->
-    <title>NavruzBRO - shaxsiy blog</title>
+    <title>Qurilma ekranini o'lchovchi</title>
     <!--Kode mono font import-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,11 +19,10 @@
 
     <!--My static files link-->
     
-    <link href="./css/shared.css" rel="stylesheet">
-    <link href="./css/base.css" rel="stylesheet">
-    <link href="./css/index.css" rel="stylesheet">
-    <link href="./css/matrix.css" rel="stylesheet">
-    <link href="./css/robot.css" rel="stylesheet">
+    <link href="../css/shared.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/matrix.css" rel="stylesheet">
     <!--Eng asosiy stylelar-->
     <style>
         html, body, head{
@@ -38,84 +30,33 @@
             overflow-x: hidden!important;
             position: relative;
             width:100vw;
+           
             color:#fff;
-            font-family:"Kode Mono", monospace!important;
+            font-family:"Kode Mono", monospace;
         }
+
     </style>
 </head>
-<body id="body">
+<body>
     <!--Qidiruv uchun-->
     <h1 class="opacity-0 p-absolute">
-       NavruzBRO - xizmatlar va shaxsiy blog!
+       Sizning Qurilmangiz ekran o'lchovi qanday?
     </h1>
     <p class="opacity-0 p-absolute">
-      Web dasturchi va tajribali telegram kanallar admini Navruz Norpulatovning shaxsiy blogi -- About me, Portfolio, Resume, Blog, Service and Feedback pages
+      Qurilmangiz ekranini html o'lchamlari - "width" "height" o'lchab beruvchi ajoyib sayt
+      <img style="position:absolute; width:1rem;" src="../media/hacker-for-background.jpeg">
     </p>
 
-    <!--576px dan kichik devayslar uchun pastgi navbar-->
-    <div id="small-navbar" class="small-navbar fixed-bottom">
-        <div class="bottom-navbar">
-            <div class="row">
-                <!--
-                <div class="col">
-                    <a href="#" class="bottom-nav-item">
-                        <p>
-                            <i class="fa-solid fa-house"></i>
-                            <br>
-                            <code>Home</code>
-                        </p> 
-                    </a>
-                </div>
-                -->
-                <div class="col">
-                    <a href="#" class="bottom-nav-item">
-                        <p>
-                            <i class="fa-solid fa-computer"></i>
-                            <br>
-                            <code>Service</code>
-                        </p>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="#" class="bottom-nav-item">
-                        <p>
-                            <i class="fa-solid fa-file"></i>
-                            <br>
-                            <code>Resume</code>
-                        </p>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="#" class="bottom-nav-item">
-                        <p>
-                            <i class="fa-solid fa-briefcase"></i>
-                            <br>
-                            <code>Portfolio</code>
-                        </p>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="#" class="bottom-nav-item">
-                        <p>
-                            <i class="fa-solid fa-hashtag"></i>
-                            <br>
-                            <code>Blog</code>
-                        </p>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--END-->
+    
     <!--Navbar-section-->
         <div class="navbar-section">
             <nav class="navbar navbar-expand-md navbar-section">
                 <div class="container-fluid">
                     <a class="navbar-brand navbar-user" href="#">
                         <div class="navbar-logo">
-                            <img src="./media/NavruzBRO.jpg" alt="NavruzBRO photo">
+                            <img src="../media/NavruzBRO.jpg" alt="NavruzBRO photo">
                         </div>
-                        <div class="navbar-user-name f-kode">
+                        <div class="navbar-user-name">
                             <p>NavruzBRO</p>
                             <br>
                             <span>Software Engineer</span>
@@ -128,30 +69,12 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link nav-link-active" aria-current="page" href="#">
-                            Home
+                        <a class="nav-link" aria-current="page" href="#">
+                           Bosh sahifaga qaytish&nbsp;<i class="fa-solid fa-right-from-bracket"></i>
                         </a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Service
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Resume
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Portfolio
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Blog
-                        </a>
-                      </li>
+                      
+    
                     </ul>
                   </div>
                 </div>
@@ -1205,305 +1128,35 @@
         <div class="row">
             <div class="col-12 col-md-6 main-text-box">
                 <div class="main-text f-kode">
-                    <p>Hi there, I am</p>
-                    <h2>NavruzBRO</h2>
-                    <p>I'm Software Engineer</p>
+                    <p>Sizning qurilmangiz ekran o'lchami</p>
+                    <h3 id="dimensions" class="txt-green-white" ></h3>
+                    <p>width (uzunlik) - height (balandlik)</p>
                 </div>
                 <div class="">
                     <div class="main-site-text">
-                        <p >
-                            <i class="fa-solid fa-code"></i>
-                            <br>
-                            <i class="fa-brands fa-python"></i>
-                        </p>
-                        <p id="d432">
-                            <i class="fa-solid fa-laptop"></i>
-                            <br>
-                            <i class="fa-solid fa-arrow-trend-up"></i>
-                        </p>
-                        
-                        <p class="f-kode txt-green-white-none">
-                        Web sayt sizga bo'lgan ishonchni <span class="txt-green-none">87%</span> ga oshiradi. Web sayt yaratish borasida bizga murojat qiling!<span class="txt-green-none" > Tezkor, ishonchli va hamyonbop.</span>
+                        <p class="f-kode txt-green-none">
+                           Web sayt
+                            <span class="txt-green-white">Qurilmangizning piksellarini o'lchamaydi. </span> Aksincha brauzeringiz <span class="txt-green-white">
+                                html o'lchovlaridir
+                            </span>  - bu o'lchovlar sizga 
+                             <span class="txt-green-white">
+                                saytning 
+                            qanday ko'rinishini
+                             </span>
+                            
+                             belgilab beradi.
                         </p>
                     </div>
-                    <p>
-                    <a href="#" class="butn">
-                      Sayt yaratish&nbsp;<i class="fa-solid fa-arrow-right"></i>
-                    </a> 
-                    </p>
                 </div>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 w23d">
                 <div class="main-section-img">
-                    <img src="./media/hacker-for-background.jpeg" alt="NAVRUZ BRO DEVELOPER" >
+                    <img src="../media/hacker-for-background.jpeg" alt="NAVRUZ BRO DEVELOPER" >
                 </div>
             </div>
         </div>
     </div>
   </div>
-<!--About me-->
-<div class="about-me-section my-5 ">
-    <div class="container">
-        <div class="about-me-section">
-            <div class="row">
-                <div class="col-12 col-md-6 order-2 order-md-1 my-3 my-md-5">
-                    <div class="about-me-section-img d-flex align-items-center justify-content-center">
-                         <div class="about-me-section-img-inner">
-                            <img src="./media/developer-dark-back.gif" alt="NavruzBRO">
-                         </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 order-1 order-md-2 my-3 my-md-5">
-                    <div class="about-me-section-text">
-                        <h2 class="txt-green-white">
-                            Men haqimda
-                        </h2>
-                        <br>
-                        <p class="txt-green">
-                            Ismim <span class="txt-green-white"><b>Navruz Norpulatov</b></span><br>
-                            Dasturchiman<br>
-                            Yoshim 17da<br>
-                            Hozirda  
-                            <span class="txt-green-white"><i class="fa-solid fa-globe"></i>&nbsp;web sayt va <i class="fa-solid fa-robot"></i>&nbsp;telegram bot</span>  yarataman.
-                            <br>
-                            <a href="http://t.me/MidjourneyUzOfficial" target="_blank" class="txt-link">Telegram kanalimdan birida</a>  <b>Midjourney</b> yordamida yaratgan rasmlarimni joylab boraman.
-                            <br>
-                            <b>Maqsadim</b> <span class="txt-green-white">IT texnologiyalar</span>  rivojida o'z hissamni qo'shish.
-                            <br>
-                            Kelajakda o'z faoliyatimni "<b>Game development</b>" yoki "<b>Data Science and AI</b>" sohalarida davom ettirish niyatim bor!
-                        </p>
-                        <p>
-                            <a  class="butn" href="#">
-                                Ko'proq bilish
-                            </a>
-                        </p>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--End about me section-->
-
-
-<!--Service-->
-<div class="service-section my-5">
-    <div class="container">
-        <div class="service-section-inner my-md-5">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="txt-green-white">
-                        Mening xizmatlarim
-                    </h2>
-                </div>    
-                <div class="col-12 col-md-6 my-4">
-                    <div class="service-section-web">
-                        <div class="earth-gif">
-                            <img src="./media/earth-loop.gif">
-                        </div>
-                        <h4 class="ef3es txt-dark fw-600">
-                            Web sayt
-                        </h4>
-                        <p class="txt-dark">
-                            Imkoniyat
-                        </p>
-                        <p>
-                            <a href="#" class="butn-web">
-                                Ko'proq ma'lumot
-                            </a>
-                        </p>         
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 my-4">
-                    <div class="service-section-bot">
-                        <div class="robot-gif">
-                                <div class="ear-1">
-
-                                </div>
-                                <div class="head">
-                                    <div class="signaler-circle">
-                                    </div>
-                                    <div class="signaler">
-                                    </div>
-                                    <div class="eye-1"></div>
-                                    <div class="eye-2"></div>
-                                    <div class="mouth"></div>
-                                </div>
-                                <div class="ear-2">
-
-                                </div>
-                        </div>
-                        <h4 class="srscbth4 txt-dark fw-600">
-                            Telegram bot
-                        </h4>
-        
-                        <p class="txt-dark">
-                          Telegram sifatli bot  
-                        </p>
-                        <p>
-                            <a href="#" class="butn-bot">
-                                Ko'proq tanishish
-                            </a>
-                        </p> 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--end service-->
-
-<div class="blog-section my-5">
-    <div class="container">
-        <div class="blog-section-inner">
-            <div class="blog-section-head">
-                <h2 class="txt-green-white">
-                    Mening blogim
-                </h2>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-4 my-3">
-                    <a href="#" class="blog-section-item">
-                        <div class="blog-section-img">
-                            <img src="./media-test/niko-lewman-Zvkhn4620bc-unsplash.jpg">
-                        </div>
-                        <p class="txt-black-none px-2" >
-                           Nimalar <b>nima yozih</b>deyish kerak bilmadimu shunchaki sinov uchunn yaratib qoyyapmanda vapshi zur ishdi qilib bosib yotibman hammasi zur
-                        </p>
-                    </a>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 my-3">
-                    <a href="#" class="blog-section-item">
-                        <div class="blog-section-img">
-                            <img src="./media-test/kseniia-zapiatkina-kW1G5s-K2yU-unsplash.jpg">
-                        </div>
-                        <p class="txt-black-none px-2" >
-                           Nimalar <b>nima yozih</b>deyish kerak bilmadimu shunchaki sinov uchunn yaratib qoyyapmanda vapshi zur ishdi qilib bosib yotibman hammasi zur
-                        </p>
-                    </a>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 my-3">
-                    <a href="#" class="blog-section-item ">
-                        <div class="blog-section-img">
-                            <img src="./media-test/kung-fu-panda-4-4k-wallpaper.jpg">
-                        </div>
-                        <p class="txt-black-none px-2" >
-                           Nimalar <b>nima yozih</b>deyish kerak bilmadimu shunchaki sinov uchunn yaratib qoyyapmanda vapshi zur ishdi qilib bosib yotibman hammasi zur
-                        </p>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--Portfolio-->
-<div class="portfolio-section my-5">
-    <div class="container">
-        <div class="portfolio-section-inner">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="">
-                        <h2 class="txt-green-white">
-                            Qilgan ishlarim
-                        </h2>
-                        <a href="http://kinomakon.uz" target="_blank" class="portfolio-section-item my-3 txt-green">
-                           <div class="row">
-                                <div class="col-auto">
-                                    <div class="portfolio-section-item-img">
-                                        <img src="./media/project-kinomakon.png" alt="NavruzBRO.uz">
-                                    </div>
-                                </div>
-                                <div class="col pt-2">
-                                    <h6>
-                                        Kinomakon web sayti
-                                    </h6>
-                                    <p>
-                                    <code >
-                                        Onlayn bepul va rekalamasiz Kinoteatr(sinov)
-                                    </code>
-                                    </p>
-                                </div>
-                           </div>
-                        </a>
-                        <a href="http://navruzbro.uz" target="_blank" class="portfolio-section-item my-3 txt-green">
-                            <div class="row">
-                                 <div class="col-auto">
-                                     <div class="portfolio-section-item-img">
-                                         <img src="./media/developer-dark-back.gif" alt="NavruzBRO.uz">
-                                     </div>
-                                 </div>
-                                 <div class="col pt-2">
-                                     <h6>
-                                         NavruzBRO web sayti
-                                     </h6>
-                                     <p>
-                                     <code >
-                                         Shaxsiy blog va Xizmatlarimni sotish
-                                     </code>
-                                     </p>
-                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--End portfolio-->
-
-
-
-  <!--Contact us-->
-<div class="contact-us my-5 mx-2 mx-sm-1">
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <h4 class="txt-green-white">
-                    Biz bilan bog'lanish
-                </h4>
-                <br>
-                <p>
-                    <span class="txt-green fw-200">
-                        Contact us in this website:
-                    </span>
-                    <br>
-                    <a href="#" class="butn my-2 d-inline-block">
-                        &nbsp;Contact us&nbsp;<i class="fa-solid fa-globe"></i>
-                    </a>
-                    <br>
-                    <br>
-                    <span class="txt-green fw-200">
-                        Telegram orqali:
-                    </span>
-                    <h5 class="txt-green fw-200">
-                        <a href='http://t.me/navruzbro'  class="txt-decoration-none txt-green">
-                            <i class="fa-brands fa-telegram"></i>&nbsp;@NavruzBRO
-                        </a>
-                    </h5>
-                    <br>
-                    <a href="http://t.me/navruzbro" class="butn ">
-                        &nbsp;Bog'lanish&nbsp;<i class="fa-brands fa-telegram"></i>
-                    </a>
-                    <br><br>
-                    <code class="txt-green-dark">
-                        <i class="fa-solid fa-circle-exclamation"></i>
-                        &nbsp; Eslatma: Telegram orqali murojaat qilsangiz. Tezroq javob olasiz!
-                    </code>
-                </p>
-            </div>
-            <div class="col-12 col-md-6">
-
-            </div>
-        </div>
-    </div>
-</div>  
 
 <footer class="footer-section mt-5 px-3 py-5">
     <div class="container-fluid">
@@ -1528,7 +1181,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-12 txt-center-lg-right my-3">
-                <code class="f-kode"><a href="#" class="f-kode txt-decoration-none txt-green">Yuqoriga&nbsp;<i class="fa-solid fa-up-long"></i></a> </code>  
+                <code class="f-kode"><a href="#top" class="f-kode txt-decoration-none txt-green">Yuqoriga&nbsp;<i class="fa-solid fa-up-long"></i></a> </code>  
             </div>
             <br>
             <div class="col-12 my-4">
@@ -1551,9 +1204,9 @@
         </div>
     </div>
 </footer>
-  
-
   <!--Bootstrap JS files-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--Script files-->
+    <script src="../js/device-sizer.js"></script>
 </body>
 </html>

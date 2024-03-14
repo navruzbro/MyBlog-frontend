@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<!--About this web site:
+    --Bu saytni o'z fantaziyamni ishga solgan holda yaratyapman--
+    --Hacker rasmini internetdan yuklab oldim--
+    --Matritsa uslubidagi animatsiyani ham o'zim yaratdim (hech qanday manbadan olinmagan!)--
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--title va title icon-->
+    <title>Filmlar - Ko'rgan / Ko'rmoqchi bo'lgan filmlar ro'yxati</title>
+    <!--Kode mono font import-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <!--Bootstrap static files-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!--Font awesome (Icons)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+
+    <!--My static files link-->
+    
+    <link href="../css/shared.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/matrix.css" rel="stylesheet">
+    <link href="../css/robot.css" rel="stylesheet">
+    <link href="../css/my-films.css" rel="stylesheet">
+    <!--Eng asosiy stylelar-->
+    <style>
+        html, body, head{
+            background-color:rgb(29, 35, 35)!important;
+            overflow-x: hidden!important;
+            position: relative;
+            width:100vw;
+            color:#fff;
+            font-family:"Kode Mono", monospace!important;
+        }
+    </style>
+</head>
+<body id="body">
+    <!--576px dan kichik devayslar uchun pastgi navbar-->
+    <div id="small-navbar" class="small-navbar fixed-bottom">
+        <div class="bottom-navbar">
+            <div class="row">
+                <!--
+                <div class="col">
+                    <a href="#" class="bottom-nav-item">
+                        <p>
+                            <i class="fa-solid fa-house"></i>
+                            <br>
+                            <code>Home</code>
+                        </p> 
+                    </a>
+                </div>
+                -->
+                <div class="col">
+                    <a href="#" class="bottom-nav-item">
+                        <p>
+                            <i class="fa-solid fa-computer"></i>
+                            <br>
+                            <code>Service</code>
+                        </p>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="bottom-nav-item">
+                        <p>
+                            <i class="fa-solid fa-file"></i>
+                            <br>
+                            <code>Resume</code>
+                        </p>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="bottom-nav-item">
+                        <p>
+                            <i class="fa-solid fa-briefcase"></i>
+                            <br>
+                            <code>Portfolio</code>
+                        </p>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="bottom-nav-item">
+                        <p>
+                            <i class="fa-solid fa-hashtag"></i>
+                            <br>
+                            <code>Blog</code>
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END-->
+
+    <!--Navbar-section-->
+        <div class="navbar-section">
+            <nav class="navbar navbar-expand-md navbar-section">
+                <div class="container-fluid">
+                    <a class="navbar-brand navbar-user" href="#">
+                        <div class="navbar-logo">
+                            <img src="../media/NavruzBRO.jpg" alt="NavruzBRO photo">
+                        </div>
+                        <div class="navbar-user-name f-kode">
+                            <p>NavruzBRO</p>
+                            <br>
+                            <span>Software Engineer</span>
+                        </div>
+                  </a>
+                  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars fa-xxl"></i>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">
+                            Home
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Service
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Resume
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Portfolio
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Blog
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+     <!--Body section-->
+
+     <!--My films-->
+
+     <!--NImalar bo'ladi:
+    1. Film nomi, inglizcha orginal nomi, qaysi tilda ko'rilgani ko'rilgan sanasi, filmga bergan ball,
+    2. barcha filmlar soni, tahrirlash, qo'shish (o'chirish deyarli kerak bo'lmagani uchun admin panel orqali qilinadi!)
+    3. eng saralarga qo'shish uchun layk bosish funksiyasi....
+    4. Faqat mening ko'rgan filmlar ro'yxatim saqlanadi
+    5. Mendan boshqa hech kim kiraolmaydi.....
+-->
+     <div class="my-films">
+        <div class="container">
+            <div class="my-films-inner p-2 my-3 my-md-5">
+                <div class="film-adder">
+                    <a href="#" class="txt-decoration-none" style="color:#fff">
+                        <i class="fa-solid fa-plus"></i>
+                    </a>
+                </div>
+                <h5 class="color-white">
+                   Oxirgi ko'rilganlar
+                </h5>
+                <code style="color:#757475">
+                   Men ko'rgan, Ko'rmoqchi bo'lgan va Qayta qayta ko'rgan filmlarim (bazi filmlar ayrim sabablarga ko'ra ro'yxatda yo'q bo'lishi mumkin!)
+                </code>
+                <br>
+                <br>
+                <div class="my-films-filter">
+                    <p class="d-inline-flex gap-1">
+                        <a class="butn" data-bs-toggle="collapse" href="#my-films-filter" role="button" aria-expanded="false" aria-controls="my-films-filter">
+                            <i class="fa-solid fa-filter"></i> filter
+                        </a>
+                      </p>
+                      <div class="collapse" id="my-films-filter">
+                        <div class="my-films-filter-inner">
+                          Usha mashhur jumlalar yoziladigan joy
+                        </div>
+                      </div>           
+                </div>
+
+                <!--Film items-->
+                <br>
+                <div class="my-films-item txt-sans-serif">
+                    <p class="my-films-item-name">
+                        <a class="txt-decoration-none" style="color:#FFD700"><i class="fa-solid fa-star"></i></a>
+                        <i style="color:#ffd700" class="fa-solid fa-arrows-rotate"></i> 
+                        Karib dengizi qaroqchilari 
+                         |&nbsp;<code >2024</code> 
+                         |&nbsp;<code><i class="fa-solid fa-chart-line"></i> - 8.6</code>
+                         |&nbsp;<code>kino</code>
+                         |&nbsp;<code><i class="fa-solid fa-language"></i> - uz</code>&nbsp;|
+                        
+                         <a href="#" class="txt-decoration-none " style="color:#52b038" >&nbsp;<i class="fa-solid fa-pencil">&nbsp;</i></a>
+                       <a href="#" class="txt-decoration-none " style="color:#71beee fw-800" >&nbsp;<i class="fa-solid fa-plus"></i>&nbsp;</i></a>
+                    </p>
+                </div>
+                <div class="my-films-item txt-sans-serif">
+                    <p class="my-films-item-name">
+                        <a class="txt-decoration-none" style="color:#462c02"><i class="fa-solid fa-star"></i></a>
+                         <i style="color:#52b038;" class="fa-solid fa-check"></i>
+                         Flesh
+                         |&nbsp;<code >2024</code> 
+                         |&nbsp;<code><i class="fa-solid fa-chart-line"></i> - 3.5</code>
+                         |&nbsp;<code>kino</code>
+                         |&nbsp;<code><i class="fa-solid fa-language"></i> - uz </code>&nbsp;|
+                       <a href="#" class="txt-decoration-none " style="color:#52b038" >&nbsp;<i class="fa-solid fa-pencil">&nbsp;</i></a>
+                       <a href="#" class="txt-decoration-none " style="color:#71beee fw-800" >&nbsp;<i class="fa-solid fa-plus"></i>&nbsp;</i></a>
+                    </p>
+                </div>
+                <div class="my-films-item txt-sans-serif">
+                    <p class="my-films-item-name">
+                        <a class="txt-decoration-none" style="color:#757575"><i class="fa-solid fa-star"></i></a>
+                        <i style="color:#52b038;" class="fa-solid fa-check"></i> 
+                        Napaleon
+                       |&nbsp;<code >2024</code> 
+                       |&nbsp;<code><i class="fa-solid fa-chart-line"></i> - 6.5</code>
+                       |&nbsp;<code>kino</code>
+                       |&nbsp;<code><i class="fa-solid fa-language"></i> - uz & en</code>&nbsp;|
+                       <a href="#" class="txt-decoration-none " style="color:#52b038" >&nbsp;<i class="fa-solid fa-pencil">&nbsp;</i></a>
+                       <a href="#" class="txt-decoration-none " style="color:#71beee fw-800" >&nbsp;<i class="fa-solid fa-plus"></i>&nbsp;</i></a>
+                    </p>
+                </div>
+                <div class="my-films-item txt-sans-serif">
+                    <p class="my-films-item-name">
+                        <a class="txt-decoration-none" style="color:#fff">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <i style="color:red;" class="fa-solid fa-eye"></i>
+                        Loki 1-fasl 
+                       |&nbsp;<code><i class="fa-solid fa-chart-line"></i> - ...</code>
+                       |&nbsp;<code>serial</code>
+                       |&nbsp;<code><i class="fa-solid fa-language"></i> - uz & en</code>&nbsp;|
+                       <a href="#" class="txt-decoration-none " style="color:#52b038" >&nbsp;<i class="fa-solid fa-pencil">&nbsp;</i></a>
+                       <a href="#" class="txt-decoration-none " style="color:#71beee fw-800" >&nbsp;<i class="fa-solid fa-plus"></i>&nbsp;</i></a>
+                    </p>
+                </div>
+
+                <p style="color:#fff;opacity:0.8;">Jami: 77ta</p>
+                <!--Film items <> footer-->
+                <hr style="color:#fff">
+                <div class="my-films-footer txt-sans-serif">
+                    <p style="color:#fff;">
+                        Film baholari:
+                    </p>
+                    <p>
+                        <a class="txt-decoration-none" style="color:rgb(69, 209, 228)"><i class="fa-solid fa-star"></i></a> <span style="color:#fff;">- 7+ (Eng zo'ri - faqat 10 ball uchun)</span>
+                    </p>
+                    <p>
+                        <a class="txt-decoration-none" style="color:#FFD700"><i class="fa-solid fa-star"></i></a> <span style="color:#fff;">- 7+ (GOLD)</span>
+                    </p>
+                    <p>
+                        <a class="txt-decoration-none" style="color:#757575"><i class="fa-solid fa-star"></i></a> <span style="color:#fff;">- 4+ (SILVER)</span>
+                    </p>
+                    <p>
+                        <a class="txt-decoration-none" style="color:#FFD700"><i class="fa-solid fa-star"></i></a> <span style="color:#fff;">- 0-4 (BRONZE)</span>
+                    </p>
+                    <p style="color:#fff;">
+                        Shartli belgilar:
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;<i class="fa-solid fa-check"></i> - Ko'rilgan
+                    </p> 
+                    <p>
+                        &nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrows-rotate"></i> - Qayta qayta ko'rilgan
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;<i class="fa-solid fa-eye"></i> - Ko'rish rejalashtirilgan
+                    </p>
+
+                </div>
+            </div>
+        </div>
+     </div>
+ 
+<footer class="footer-section mt-5 px-3 py-5">
+    <div class="container-fluid">
+        <div class="row f-kode">
+            <div class="col-lg-3 col-12 my-3">
+                <h6 class="txt-center-lg txt-green"><a class="txt-green txt-decoration-none" href="http://navruzbro.uz" target="_blank">NavruzBRO.uz - 2024</a></h2>
+            </div>
+            <div class="col-lg-5 col-12 my-3">
+                <div class="row ">
+                    <div class="col f-kode">
+                        <code class="f-kode"><a href="#" class="txt-decoration-none txt-green">Home</a> </code>
+                    </div>
+                    <div class="col f-kode">
+                        <code class="f-kode"><a href="#" class="txt-decoration-none txt-green">Service</a> </code>
+                    </div>
+                    <div class="col f-kode">
+                        <code class="f-kode"><a href="#" class="txt-decoration-none txt-green">Resume</a> </code>
+                    </div>
+                    <div class="col f-kode">
+                        <code class="f-kode"><a href="#" class="txt-decoration-none txt-green">Portfolio</a> </code>  
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-12 txt-center-lg-right my-3">
+                <code class="f-kode"><a href="#" class="f-kode txt-decoration-none txt-green">Yuqoriga&nbsp;<i class="fa-solid fa-up-long"></i></a> </code>  
+            </div>
+            <br>
+            <div class="col-12 my-4">
+                <h5 class="txt-center txt-green txt-decoration-none">
+                    <a href="http://t.me/cyberasia" target="_blank" class="txt-decoration-none  txt-green py-5 px-2">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                   
+                    <a href="http://github.com/navruzbro" target="_blank" class="txt-decoration-none txt-green py-5 px-2"  >
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="http://instagram.com/navruzbro_" target="_blank" class="txt-decoration-none txt-green py-5 px-2">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/navruzbro/" target="_blank" class="txt-green txt-decoration-none py-5 px-2">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </h5>
+            </div>
+        </div>
+    </div>
+</footer>
+  
+
+  <!--Bootstrap JS files-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

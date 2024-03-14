@@ -1,0 +1,147 @@
+.robot-gif{
+    width:4rem!important;
+    height:4rem!important;
+    position:absolute!important;
+    display:inline-block!important;
+    animation:robot 2s;
+    animation-iteration-count: 100;
+}
+
+.robot-gif div{
+    display:inline-block;
+}
+.ear-1, .ear-2{
+    position:absolute;
+}
+.ear-2{
+    width:9%;
+    height:30%;
+    margin-top:45%;
+    margin-bottom:25%;
+    border-radius:0 5px 5px 0 ;
+    border:2px solid #1d2323;
+    display:inline-block;
+    right:0;
+}
+
+.ear-1{
+    width:9%;
+    height:30%;
+    margin-top:45%;
+    margin-bottom:25%;
+    border-radius:5px 0 0 5px;
+    border:2px solid #1d2323;
+    display:inline-block;
+    left:0;
+}
+
+.head{
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
+    margin-top:30%;
+    height:70%;
+    border-radius:10px;
+    border:3px solid #1d2323;
+    display:inline-block;
+    position:relative;
+}
+.head .signaler-circle{
+    position:absolute;
+    border-radius:50%;
+    background-color:#1d2323;
+    width:0.6rem;
+    height:0.6rem;
+    margin-left:40%;
+    margin-right:45%;
+    top:-50%;
+
+}
+.head .signaler{
+    position:absolute;
+    background-color:#1d2323;
+    width:0.2rem;
+    height:46%;
+    margin-left:48%;
+    margin-right:44%;
+    top:-46%;
+}
+
+.head .eye-1, .head .eye-2{
+    width:0.6rem;
+    height:0.6rem;
+    border-radius:50%;
+    position:absolute;
+    background:#1d2323;
+}
+
+.head .eye-1{
+    top:27%;
+    left:20%;
+}
+
+.head .eye-2{
+    top:27%;
+    right:20%;
+}
+
+.head .mouth{
+    background:#263333;
+    border:1.7px solid #1d2323;
+    border-radius:0 0 100% 100%;
+    width:30%;
+    height:20%;
+    position:absolute;
+    left:35%;
+    bottom:10%;
+    animation: mouthanim 3s;
+    animation-iteration-count: 100;
+}
+
+@keyframes mouthanim{
+    0%{
+        height:20%;
+    }
+    10%{
+        border-radius:0 0 50% 50%;
+    }
+    20%{
+        height:7%;
+        border-radius:0;
+        bottom:23%
+    }
+    45%{
+        height:7%;
+        border-radius:0;
+        bottom:23%
+    }
+    55%{
+        height:20%;
+        border-radius:50% 50% 0 0;
+        bottom:10%
+    }
+    80%{
+        height:20%;
+        border-radius:50% 50% 0 0;
+        bottom:10%
+    }
+
+    90%{
+        height:20%;
+        border-radius:0 0 50% 50%;
+        bottom:10%
+    }
+    100%{
+        height:20%;
+        border-radius:0 0 50% 50%;
+    }
+}
+
+@keyframes robot{
+    70%{
+        transform:translateY(8px)
+    }
+    100%{
+        transform:translateY(0px)
+    }
+}

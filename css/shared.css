@@ -14,6 +14,13 @@ a{
 .opacity-10, .opacity-1{
     opacity:1!important;
 }
+.fw-800{
+    font-weight:800;
+}
+
+.txt-sans-serif{
+    font-family:sans-serif!important;
+}
 .txt-decoration-none{
     text-decoration: none;
 }
@@ -41,6 +48,15 @@ a{
 .txt-center-lg-right{
     text-align: end!important;
 }
+
+.blur-box{
+    background: rgba(123, 122, 122, 0.5);
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    backdrop-filter: blur(20px);
+    padding:0.6rem;
+    border-radius:7px;
+}
+
 @media(max-width:992px){
     .txt-center-lg, .txt-center-lg-right{
     text-align:center!important;
@@ -55,6 +71,26 @@ a{
 }
 .txt-green-dark{
     color:#265817!important;
+}
+.txt-dark{
+    color:#1d2323!important;
+    filter:drop-shadow(1px 0.1px 0.3px #000)!important;
+}
+
+.txt-black{
+    color:#000!important;
+    filter:drop-shadow(1px 0.1px 0.3px #000)!important;
+}
+.txt-dark-none{
+    color:#1d2323!important;
+}
+
+.txt-black-none{
+    color:#000!important;
+}
+
+.fw-600{
+    font-weight:600!important;
 }
 /*buttons*/
 .butn{
@@ -77,10 +113,85 @@ a{
     border:2px solid #52B038;
     color:#52B038;
 }
+.butn-border{
+    z-index:10;
+    color:#000;
+    font-weight:600;
+    font-family: "Kode Mono", monospace;
+    background-color: #52B038;
+    border-radius:0 12px 1px 5px;
+    border:2px solid #1d2323;
+    text-decoration:none;
+    padding-left:0.7rem;
+    padding-right:0.7rem;
+    padding-top:0.3rem;
+    padding-bottom:0.3rem;
+    transition: all 0.4s ease-out;
+}
+
+.butn-border:hover, .butn-border:active{
+    background-color:#1D2323;
+    border:2px solid #52B038;
+    color:#52B038;
+}
+
+.butn-web{
+    z-index:10;
+    color:rgb(82, 176, 50, 1);
+    font-weight:600;
+    font-family: "Kode Mono", monospace;
+    background-color:#1D2323;
+    border-radius:0 12px 1px 5px;
+    border:2px solid rgb(68, 148, 41);
+    text-decoration:none;
+    padding-left:0.7rem;
+    padding-right:0.7rem;
+    padding-top:0.3rem;
+    padding-bottom:0.3rem;
+    transition: all 0.4s ease-out;
+  }
+  
+  .butn-web:hover, .butn-web:active{
+    background-color:rgb(82, 176, 50, 1);
+    border:2px solid #1d2323;
+    color:#1d2323;
+  }
+
+  .butn-bot{
+    z-index:10;
+    color:rgb(99, 177, 225, 1);
+    font-weight:600;
+    font-family: "Kode Mono", monospace;
+    background-color:#1D2323;
+    border-radius:0 12px 1px 5px;
+    border:2px solid rgb(81, 147, 188);
+    text-decoration:none;
+    padding-left:0.7rem;
+    padding-right:0.7rem;
+    padding-top:0.3rem;
+    padding-bottom:0.3rem;
+    transition: all 0.4s ease-out;
+  }
+  
+  .butn-bot:hover, .butn-bot:active{
+    background-color:rgb(99, 177, 225, 1);
+    border:2px solid #1d2323;
+    color:#1d2323;
+  }
+
 /*end buttons*/
 .very-big-size{
     font-size:30vw!important;
 }
 .bigger-size{
     font-size:3vw!important;
+}
+.align-items-center{
+    align-items:center!important;
+}
+.justify-content-center{
+    justify-content: center!important;
+}
+.text-align-center{
+    text-align: center!important;
 }
